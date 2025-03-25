@@ -1,8 +1,10 @@
-project/.vs/play_ue5/v17/*
-project/.vs/*
+project/.vs
 project/Saved
 project/Intermediate
 project/Build
+project/Binaries
 project/Plugins
+project/Content/__ExternalActors__
+project/Content/__ExternalObjects__
 *.sln
 *_BuiltData.uasset
