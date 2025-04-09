@@ -8,3 +8,6 @@ project/Content/__ExternalActors__
 project/Content/__ExternalObjects__
 *.sln
 *_BuiltData.uasset
+project/.editorconfig
+project/shadertoolsconfig.json
+project/UpgradeLog.htm
