@@ -6,6 +6,7 @@ project/Binaries
 project/Plugins
 project/Content/__ExternalActors__
 project/Content/__ExternalObjects__
+project/DerivedDataCache
 *.sln
 *_BuiltData.uasset
 project/.editorconfig
