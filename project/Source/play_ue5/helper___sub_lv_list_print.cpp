@@ -21,16 +21,23 @@ void Uhelper___sub_lv_list_print::BeginPlay()
 
 	// ...
 
-	for( const ULevelStreaming* sub_level : GetWorld()->GetStreamingLevels() )
+	if( GetWorld()->PersistentLevel )
 	{
-		if( !sub_level )
+		for( const ULevelStreaming* sub_level : GetWorld()->GetStreamingLevels() )
 		{
-			continue;
-		}
+			if( !sub_level )
+			{
+				continue;
+			}
 
-		sub_level_name_list.Add( sub_level->GetWorldAssetPackageName() );
+			if( GetWorld()->PersistentLevel->GetOuter() != sub_level->GetOuter() )
+			{
+				continue;
+			}
+
+			sub_level_name_list.Add( sub_level->GetWorldAssetPackageName() );
+		}
 	}
-	
 }
 
 
